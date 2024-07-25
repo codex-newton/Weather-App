@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div>
+            <label>
+                <input type="radio" name="searchMethod" value="city" checked> Search by City
+            </label>
+            <label>
+                <input type="radio" name="searchMethod" value="coordinates"> Search by Coordinates
+            </label>
+        </div>
+        <div id="cityInputs">
+            <input type="text" id="locationInput" placeholder="Enter a city">
+        </div>
+        <div id="coordinateInputs" style="display: none;">
+            <input type="text" id="latInput" placeholder="Enter latitude">
+            <input type="text" id="lonInput" placeholder="Enter longitude">
+        </div>
+        <button id="searchButton">Search</button>
+        <div class="weather-info">
+            <h2 id="location"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="error-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
